@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+    <style>
+        /* Reset some default styles and set font family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styles */
+#header {
+    background: #00d4ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+}
+
+.material-symbols-outlined {
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+/* Content styles */
+.main.wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Wrap content when it doesn't fit horizontally */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-img {
+    width: 60%;
+    max-width: 600px; /* Set a max width for the image container */
+}
+
+.container-text {
+    width: 40%;
+    max-width: 400px; /* Set a max width for the text container */
+    padding: 20px;
+}
+
+.image-content {
+    width: 100%;
+    height: auto;
+}
+
+.content-text, .content-text2, .about {
+    text-shadow: 10px 10px 25px cyan;
+}
+
+.content-text {
+    font-size: 40px;
+}
+
+.content-text2 {
+    font-size: 30px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 560px) {
+    .navbar {
+        width: 100%; /* Make the navigation bar full width on small screens */
+        justify-content: space-between; /* Rearrange navigation items */
+    }
+
+    .nav-item {
+        width: auto; /* Let navigation items expand as needed */
+    }
+
+    .container-img {
+        width: 100%; /* Make the image section full width on small screens */
+    }
+
+    .container-text {
+        width: 100%; /* Make the text section full width on small screens */
+        padding: 10px; /* Adjust padding for better spacing */
+    }
+
+    .content-text {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .content-text2 {
+        font-size: 22px; /* Adjust font size for smaller screens */
+    }
+
+    #header{
+        width: 100%;
+    }
+}
+
+@media(max-width:310px){
+    #header{
+        width: 100%;
+    }
+}
+
+.main.wrapper{
+    display: flex;
+}
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-item"><span class="material-symbols-outlined">
+                home
+                </span></div>
+            <div class="nav-item"><span class="material-symbols-outlined">
+                favorite
+                </span></div>
+            <div class="nav-item"><span class="material-symbols-outlined">
+                menu
+                </span></div>
+        </nav>
+    </header>
+    <main class="wrapper">
+        <section class="container-img">
+            <img class="image-content" src="image/avatar-svgrepo-com.svg" alt="">
+        </section>
+        <section class="container-text">
+            <div class="wrapperText">
+                <h1 class="content-text">adrian</h1>
+                <h3 class="content-text2"><b>web</b> programmer</h3>
+                <p class="about">hallo nama saya <b>adrian</b> saya frontend web developer dan saya sekarang bersekolah di SMK TI MUHAMMADIYAH 1 CIKAMPEK</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
